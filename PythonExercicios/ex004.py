@@ -1,0 +1,6 @@
+print('===============Desafio 04===============')
+number = input('Write a number: ')
+print('The number is {}'.format(type(number)))
+print('The number is numérico? {}'.format(number.isnumeric()))
+print('The number is alfanumérico? {}'.format(number.isalnum()))
+print('The number is alfa? {}'.format(number.isalpha()))
