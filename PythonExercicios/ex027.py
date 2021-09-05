@@ -1,0 +1,6 @@
+name = str(input('Digit yuour name: ')).strip()
+splited = name.split()
+print('Nice to meet you!')
+print('Your first name is {}.'.format(splited[0]))
+#print('Your last name is {}.'.format(splited[-1]))
+print('Your last name is {}.'.format(splited[len(splited)-1]))
