@@ -8,4 +8,3 @@ while True:
     sum1 += number
     counter += 1
 print(f'You wrote {counter} numbers and the sum was {sum1}.')
-
