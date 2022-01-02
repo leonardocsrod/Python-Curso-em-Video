@@ -2,8 +2,8 @@ bank = 'CEV BANK'
 print('=' * 15)
 print('{:^15}'.format(bank))
 print('=' * 15)
-value = int(input('How much money do you want to get: R$ '))
-total = value
+valor = int(input('How much money do you want to get: R$ '))
+total = valor
 cedula = 50
 totalCedula = 0
 while True:
@@ -11,7 +11,8 @@ while True:
         total -= cedula
         totalCedula += 1
     else:
-        print(f'Total de {totalCedula} cédulas de R$ {cedula:.2f}.')
+        if totalCedula > 0:
+            print(f'Total de {totalCedula} cédulas de R$ {cedula:.2f}.')
         if cedula == 50:
             cedula = 20
         elif cedula == 20:
@@ -21,4 +22,4 @@ while True:
         totalCedula = 0
         if total == 0:
             break
-    break
+print('Caixa encerrado!')
