@@ -11,14 +11,14 @@ while True:
     if age >= 18:
         counterEighteen += 1      
     while gender not in 'MF':
-        gender = str(input('Gender[M/F]: ')).upper()[0]
+        gender = str(input('Gender[M/F]: ')).strip().upper()[0]
     if gender == 'F' and age <= 20:
         woman20 += 1
     if gender == 'M':
         mens += 1      
     print('-' * 20)
     while choice not in 'SN':
-        choice = str(input('Do you want continue[S/N]: ')).upper()[0]
+        choice = str(input('Do you want continue[S/N]: ')).strip().upper()[0]
     if choice == 'N':
         break
 print(f'Minus eighteen people: {counterEighteen}')
