@@ -1,13 +1,10 @@
-extendNumber = ('zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fiveteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty')
-choose = ' '
-while True:
-    choose = ' '
-    number = 30
-    while number < 0 or number > 20:
-        number = int(input('Digit a number betwwen zero and twenty: '))
-    print(f'The digited number was {extendNumber[number]}')
-    while choose not in 'yn':
-        choose = str(input('Do you want to continue[Y/N]: ')).strip().lower()
-    if choose == 'n':
-        break
-print('The end')
+extendedInFull = ('zero', 'one', 'two', 'three', 'four', 'five', 'six',
+'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen',
+'fiveteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty')
+choice = int(input("Digit a number between 0 and 20: "))
+ender = 'n'
+while choice < 0 or choice > 20:
+    print('The number is not valid: ')
+    choice = int(input("Digit a number between 0 and 20: "))
+
+print(f'You digit the number: {extendedInFull[choice]}')
