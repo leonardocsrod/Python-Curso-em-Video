@@ -62,7 +62,7 @@ print(f'Lista {a}')
 print(f'Lista {b}')
 print('\n')
 a = [2, 3, 5, 7]
-b = a[:] #aqui só foi copiada a lista, nã foi igualada
+b = a[:] #aqui só foi copiada a lista, nã foi igualada  
 b[2] = 8 
 print(f'Lista {a}')
 print(f'Lista {b}')
