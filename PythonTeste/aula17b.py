@@ -1,0 +1,15 @@
+dados = list()
+dados.append('Pedro')
+dados.append(25)
+print(f'dados = {dados}')
+print(f'dados[0] = {dados[0]}')
+print(f'dados[1] = {dados[1]}')
+
+pessoas = list()
+pessoas.append(dados[:])
+pessoas = [['Pedro', 25], ['maria', 19], ['Joao', 32]]
+print(f'pessoas = {pessoas}')
+print(pessoas[0][0])
+print(pessoas[1][1])
+print(pessoas[2][0])
+print(pessoas[1])
